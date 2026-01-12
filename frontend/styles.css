@@ -76,6 +76,14 @@ html, body, [class*="css"] {
     font-weight: 600;
 }
 
+/* Hide default underline */
+.stTabs [data-baseweb="tab-highlight"] {
+    display: none;
+}
+.stTabs [data-baseweb="tab-border"] {
+    display: none;
+}
+
 /* --- SEARCH & INPUTS (Invisible Tech) --- */
 .stTextInput > div > div > input {
     background: rgba(255, 255, 255, 0.03);
