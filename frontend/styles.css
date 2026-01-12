@@ -1,0 +1,252 @@
+/* --- FONTS & BASICS --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif !important;
+    color: #e2e8f0;
+    letter-spacing: -0.015em;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- LIQUID AURORA BACKGROUND --- */
+[data-testid="stAppViewContainer"] {
+    background-color: #000000;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.25) 0%, transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
+    background-attachment: fixed;
+    animation: liquidLight 20s ease-in-out infinite alternate;
+}
+
+@keyframes liquidLight {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* --- SCROLLBARS --- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); }
+
+/* --- SIDEBAR (Glass OS) --- */
+[data-testid="stSidebar"] {
+    background-color: rgba(5, 5, 5, 0.6);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-testid="stSidebar"] h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    background: linear-gradient(180deg, #fff 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.2));
+}
+
+/* --- TABS (Floating Segments) --- */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    backdrop-filter: blur(20px);
+    width: fit-content; /* Prevent full width */
+    margin-bottom: 20px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #94a3b8;
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    padding: 0 24px; /* More horizontal padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stTabs [aria-selected="true"] {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+}
+
+/* Hide default streamlit tab decoration */
+.stTabs [data-baseweb="tab-border"] {
+    display: none !important;
+}
+
+.stTabs [data-baseweb="tab-highlight"] {
+    display: none !important;
+}
+
+/* --- SEARCH & INPUTS (Invisible Tech) --- */
+.stTextInput > div > div > input {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border-radius: 16px;
+    padding: 16px 20px;
+    font-size: 1.05rem;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.stTextInput > div > div > input:focus {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 10px 40px -10px rgba(100, 100, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+/* --- JEWEL CARDS (Spotlight Effect) --- */
+.product-card {
+    position: relative;
+    background: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(40px) saturate(140%);
+    -webkit-backdrop-filter: blur(40px) saturate(140%);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Spotlight Hover */
+.product-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 1.5px; /* Border width */
+    background: linear-gradient(180deg, rgba(255,255,255,0.1), transparent 80%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.product-card:hover::before {
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(255,255,255,0.4), transparent 50%);
+}
+
+.product-img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #fff;
+    padding: 30px;
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05); /* Subtle zoom */
+}
+
+.card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+.card-title { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+.card-price { 
+    font-size: 1.6rem; 
+    font-weight: 800; 
+    color: #fff; 
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.5); /* Neon Blue Glow */
+    margin-bottom: 12px;
+}
+.card-desc { font-size: 0.9rem; color: #94a3b8; margin-bottom: 24px; font-weight: 300;     display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* --- NEON BUTTONS --- */
+.buy-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    color: #000 !important;
+    border-radius: 99px; /* Pill */
+    font-weight: 700;
+    text-decoration: none !important;
+    margin-top: auto;
+    border: none;
+    box-shadow: 0 0 0 rgba(255,255,255,0);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.buy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+/* Ghost Buttons (Icon Only) */
+.product-actions div[data-testid="stButton"] button {
+    border-radius: 50% !important;
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #e2e8f0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.product-actions div[data-testid="stButton"] button:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+/* --- DEEP SEEK MODAL (Cyberpunk/Medical) --- */
+.diag-card {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    box-shadow: 0 0 50px rgba(6, 182, 212, 0.1);
+    border-radius: 32px;
+    padding: 32px !important;
+}
+
+.diag-card section[data-testid="stFileUploaderDropzone"] {
+    background: rgba(6, 182, 212, 0.05) !important;
+    border: 1px dashed #22d3ee !important;
+    padding: 40px !important;
+}
+
+.diag-card section[data-testid="stFileUploaderDropzone"] div[data-testid="stBaseButton-secondary"] {
+    background: #22d3ee !important;
+    color: #000 !important;
+    font-weight: 800 !important;
+    border-radius: 100px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+}
+
+/* --- POPOVERS (Floating Glass) --- */
+div[data-testid="stPopoverBody"] {
+    background: rgba(15, 15, 20, 0.95);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.9);
+}
