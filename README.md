@@ -60,8 +60,8 @@ ShopAI runs on a split-stack architecture to ensure maximum performance and sepa
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/shopai.git
-cd shopai
+git clone https://github.com/jayesh3103/ShopAI.git
+cd ShopAI
 
 # Create virtual environment
 python3 -m venv venv
@@ -119,7 +119,7 @@ _Frontend runs at: `http://localhost:8501`_
 
 Since ShopAI uses a split architecture, you should deploy the Backend and Frontend separately for stability.
 
-### Part A: Deploy Backend (Render/Railway)
+### Part A: Deploy Backend (Render)
 
 1.  **Repo:** Push this code to GitHub.
 2.  **Platform:** Create a new Web Service on [Render](https://render.com).
