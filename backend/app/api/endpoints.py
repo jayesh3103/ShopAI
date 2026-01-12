@@ -29,21 +29,26 @@ async def chat(request: ChatRequest):
     """
     RAG Chat with product manuals.
     """
-    response_text, sources, visual_url = chat_service.chat(request.message, request.history)
+    try:
+        response_text, sources, visual_url = chat_service.chat(request.message, request.history)
+        
+        # Convert sources to dicts if they aren't already
+        source_dicts = []
+        for s in sources:
+            source_dicts.append({
+                "product_name": s.get("product_name"),
+                "chunk_id": s.get("chunk_id")
+            })
     
-    # Convert sources to dicts if they aren't already
-    source_dicts = []
-    for s in sources:
-        source_dicts.append({
-            "product_name": s.get("product_name"),
-            "chunk_id": s.get("chunk_id")
-        })
-
-    return ChatResponse(
-        response=response_text,
-        sources=source_dicts,
-        visual_aid_url=visual_url
-    )
+        return ChatResponse(
+            response=response_text,
+            sources=source_dicts,
+            visual_aid_url=visual_url
+        )
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/external-search")
 async def external_search(request: SearchRequest):

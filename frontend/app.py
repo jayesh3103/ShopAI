@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # --- Constants & State ---
-API_URL = "http://127.0.0.1:8000/api"
+API_URL = "https://shopai-backend-i1za.onrender.com/api" # Remote Backend
 
 if "messages" not in st.session_state:
     st.session_state.messages = []

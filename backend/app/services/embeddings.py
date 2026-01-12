@@ -6,6 +6,6 @@ def get_embeddings_service():
         raise ValueError("GOOGLE_API_KEY is not set in environment or .env file.")
     
     return GoogleGenerativeAIEmbeddings(
-        model="models/text-embedding-004",
+        model="models/embedding-001",
         google_api_key=settings.GOOGLE_API_KEY
     )
