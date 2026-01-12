@@ -1,0 +1,642 @@
+[
+    {
+        "id": "19293",
+        "name": "Guess Women Rosette White Watch",
+        "price": 7399,
+        "description": "Women Accessories - Watches (Watches). White color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/19293.jpg",
+        "manual_text": "Care Instructions for Guess Women Rosette White Watch: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "17529",
+        "name": "ADIDAS Unisex Sports Black Caps",
+        "price": 699,
+        "description": "Unisex Accessories - Headwear (Caps). Black color. Sports usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/17529.jpg",
+        "manual_text": "Care Instructions for ADIDAS Unisex Sports Black Caps: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "52322",
+        "name": "ToniQ Women Gold & Black Bangle",
+        "price": 1299,
+        "description": "Women Accessories - Jewellery (Bangle). Black color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/52322.jpg",
+        "manual_text": "Care Instructions for ToniQ Women Gold & Black Bangle: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "53578",
+        "name": "Q&Q Women White Dial Watch",
+        "price": 5599,
+        "description": "Women Accessories - Watches (Watches). White color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/53578.jpg",
+        "manual_text": "Care Instructions for Q&Q Women White Dial Watch: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "53872",
+        "name": "Puma Women Speeder Ind White Sports Shoes",
+        "price": 1299,
+        "description": "Women Footwear - Shoes (Sports Shoes). White color. Sports usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/53872.jpg",
+        "manual_text": "Care Instructions for Puma Women Speeder Ind White Sports Shoes: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "14429",
+        "name": "Enroute Women Casual Black Heels",
+        "price": 2999,
+        "description": "Women Footwear - Shoes (Heels). Black color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/14429.jpg",
+        "manual_text": "Care Instructions for Enroute Women Casual Black Heels: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "44071",
+        "name": "Hugo Women Summer Edition Perfume",
+        "price": 1299,
+        "description": "Women Personal Care - Fragrance (Perfume and Body Mist). Pink color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/44071.jpg",
+        "manual_text": "Care Instructions for Hugo Women Summer Edition Perfume: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "20511",
+        "name": "Baggit Women Roxy Net Black Handbag",
+        "price": 2199,
+        "description": "Women Accessories - Bags (Handbags). Black color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/20511.jpg",
+        "manual_text": "Care Instructions for Baggit Women Roxy Net Black Handbag: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "7475",
+        "name": "Proline Men Green Polo T-shirt",
+        "price": 599,
+        "description": "Men Apparel - Topwear (Tshirts). Green color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/7475.jpg",
+        "manual_text": "Care Instructions for Proline Men Green Polo T-shirt: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "34966",
+        "name": "Fabindia Women Printed Purple Chanderi Stole",
+        "price": 1099,
+        "description": "Women Accessories - Stoles (Stoles). Purple color. Ethnic usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/34966.jpg",
+        "manual_text": "Care Instructions for Fabindia Women Printed Purple Chanderi Stole: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "9071",
+        "name": "Mark Taylor Men Solid White Shirts",
+        "price": 1899,
+        "description": "Men Apparel - Topwear (Shirts). White color. Formal usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/9071.jpg",
+        "manual_text": "Care Instructions for Mark Taylor Men Solid White Shirts: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "23709",
+        "name": "Ray-Ban Men Wayfarer White Sunglasses",
+        "price": 599,
+        "description": "Men Accessories - Eyewear (Sunglasses). White color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/23709.jpg",
+        "manual_text": "Care Instructions for Ray-Ban Men Wayfarer White Sunglasses: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "4653",
+        "name": "ADIDAS Men Cherokee Black Grey Sandal",
+        "price": 2199,
+        "description": "Men Footwear - Sandal (Sandals). Black color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/4653.jpg",
+        "manual_text": "Care Instructions for ADIDAS Men Cherokee Black Grey Sandal: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "2189",
+        "name": "ADIDAS Men Grey Logo T-shirt",
+        "price": 899,
+        "description": "Men Apparel - Topwear (Tshirts). Grey color. Sports usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/2189.jpg",
+        "manual_text": "Care Instructions for ADIDAS Men Grey Logo T-shirt: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "47408",
+        "name": "Baggit Women Brown Cockroach Parina Wallet",
+        "price": 1099,
+        "description": "Women Accessories - Wallets (Wallets). Brown color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/47408.jpg",
+        "manual_text": "Care Instructions for Baggit Women Brown Cockroach Parina Wallet: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "36793",
+        "name": "Maxima Attivo Men Off-White Dial Watch 24130LMGT",
+        "price": 7199,
+        "description": "Men Accessories - Watches (Watches). Off White color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/36793.jpg",
+        "manual_text": "Care Instructions for Maxima Attivo Men Off-White Dial Watch 24130LMGT: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "51349",
+        "name": "Converse Men Black Casual Shoes",
+        "price": 3499,
+        "description": "Men Footwear - Shoes (Casual Shoes). Black color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/51349.jpg",
+        "manual_text": "Care Instructions for Converse Men Black Casual Shoes: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "8742",
+        "name": "Indigo Nation Men Checks Green Shirts",
+        "price": 2199,
+        "description": "Men Apparel - Topwear (Shirts). Green color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/8742.jpg",
+        "manual_text": "Care Instructions for Indigo Nation Men Checks Green Shirts: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "49100",
+        "name": "Deborah Amber 24 Ore Perfect Foundation 5",
+        "price": 999,
+        "description": "Women Personal Care - Makeup (Foundation and Primer). Skin color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/49100.jpg",
+        "manual_text": "Care Instructions for Deborah Amber 24 Ore Perfect Foundation 5: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "26651",
+        "name": "Puma Men Royal Evo Black & Red Shoes",
+        "price": 4099,
+        "description": "Men Footwear - Shoes (Casual Shoes). Black color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/26651.jpg",
+        "manual_text": "Care Instructions for Puma Men Royal Evo Black & Red Shoes: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "17134",
+        "name": "Lino Perros Women Snake Skin Look Green Handbag",
+        "price": 999,
+        "description": "Women Accessories - Bags (Handbags). Green color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/17134.jpg",
+        "manual_text": "Care Instructions for Lino Perros Women Snake Skin Look Green Handbag: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "16320",
+        "name": "Peter England Men Printed Green TShirt",
+        "price": 899,
+        "description": "Men Apparel - Topwear (Tshirts). Green color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/16320.jpg",
+        "manual_text": "Care Instructions for Peter England Men Printed Green TShirt: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "41478",
+        "name": "Carlton London Men Black Formal Shoes",
+        "price": 1399,
+        "description": "Men Footwear - Shoes (Formal Shoes). Black color. Formal usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/41478.jpg",
+        "manual_text": "Care Instructions for Carlton London Men Black Formal Shoes: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "35445",
+        "name": "Doodle Girls Pink Top",
+        "price": 1399,
+        "description": "Girls Apparel - Topwear (Tops). Pink color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/35445.jpg",
+        "manual_text": "Care Instructions for Doodle Girls Pink Top: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "28758",
+        "name": "Aurelia Women Blue Kurta",
+        "price": 1199,
+        "description": "Women Apparel - Topwear (Kurtas). Blue color. Ethnic usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/28758.jpg",
+        "manual_text": "Care Instructions for Aurelia Women Blue Kurta: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "53766",
+        "name": "Puma Men White and Navy Blue T-shirt",
+        "price": 899,
+        "description": "Men Apparel - Topwear (Tshirts). White color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/53766.jpg",
+        "manual_text": "Care Instructions for Puma Men White and Navy Blue T-shirt: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "32901",
+        "name": "Allen Solly Woman White Trousers",
+        "price": 1199,
+        "description": "Women Apparel - Bottomwear (Trousers). White color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/32901.jpg",
+        "manual_text": "Care Instructions for Allen Solly Woman White Trousers: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "11880",
+        "name": "Franco Leone Men Formal Black Formal Shoes",
+        "price": 1899,
+        "description": "Men Footwear - Shoes (Formal Shoes). Black color. Formal usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/11880.jpg",
+        "manual_text": "Care Instructions for Franco Leone Men Formal Black Formal Shoes: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "47251",
+        "name": "FCUK Underwear Men White Brief",
+        "price": 1199,
+        "description": "Men Apparel - Innerwear (Briefs). White color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/47251.jpg",
+        "manual_text": "Care Instructions for FCUK Underwear Men White Brief: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "48638",
+        "name": "Lucera Women Silver Earrings",
+        "price": 699,
+        "description": "Women Accessories - Jewellery (Earrings). Silver color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/48638.jpg",
+        "manual_text": "Care Instructions for Lucera Women Silver Earrings: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "6403",
+        "name": "Lotto Men Quick Sports Grey Floater",
+        "price": 1899,
+        "description": "Men Footwear - Sandal (Sandals). Grey color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/6403.jpg",
+        "manual_text": "Care Instructions for Lotto Men Quick Sports Grey Floater: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "25136",
+        "name": "Lino Perros Women Gold Clutch",
+        "price": 1499,
+        "description": "Women Accessories - Bags (Clutches). Gold color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/25136.jpg",
+        "manual_text": "Care Instructions for Lino Perros Women Gold Clutch: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "55116",
+        "name": "Lakme Absolute Mattreal Beige Honey Skin Natural Mousse 05",
+        "price": 1499,
+        "description": "Women Personal Care - Makeup (Foundation and Primer). Skin color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/55116.jpg",
+        "manual_text": "Care Instructions for Lakme Absolute Mattreal Beige Honey Skin Natural Mousse 05: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "25587",
+        "name": "Vishudh Women Black & Purple Printed Churidar Kurta with Dupatta",
+        "price": 1499,
+        "description": "Women Apparel - Apparel Set (Kurta Sets). Black color. Ethnic usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/25587.jpg",
+        "manual_text": "Care Instructions for Vishudh Women Black & Purple Printed Churidar Kurta with Dupatta: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "8813",
+        "name": "Spykar Men Ranger Black & Purple Check Shirt",
+        "price": 799,
+        "description": "Men Apparel - Topwear (Shirts). Purple color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/8813.jpg",
+        "manual_text": "Care Instructions for Spykar Men Ranger Black & Purple Check Shirt: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "22057",
+        "name": "Vishudh Women Printed Navy Blue Kurta",
+        "price": 1799,
+        "description": "Women Apparel - Topwear (Kurtas). Navy Blue color. Ethnic usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/22057.jpg",
+        "manual_text": "Care Instructions for Vishudh Women Printed Navy Blue Kurta: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "48811",
+        "name": "Revv Men Steel Pendant",
+        "price": 1099,
+        "description": "Men Accessories - Jewellery (Pendant). Steel color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/48811.jpg",
+        "manual_text": "Care Instructions for Revv Men Steel Pendant: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "39067",
+        "name": "Arrow Sport Men Green T-shirt",
+        "price": 1099,
+        "description": "Men Apparel - Topwear (Tshirts). Green color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/39067.jpg",
+        "manual_text": "Care Instructions for Arrow Sport Men Green T-shirt: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "5480",
+        "name": "Nike Men's Solarsoft Thong Black Flip Flop",
+        "price": 1099,
+        "description": "Men Footwear - Flip Flops (Flip Flops). Black color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/5480.jpg",
+        "manual_text": "Care Instructions for Nike Men's Solarsoft Thong Black Flip Flop: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "49647",
+        "name": "Mineral Blue & Green Printed Dress",
+        "price": 599,
+        "description": "Women Apparel - Dress (Dresses). Blue color. Casual usage.",
+        "image_url": "http://127.0.0.1:8000/static/images/49647.jpg",
+        "manual_text": "Care Instructions for Mineral Blue & Green Printed Dress: \n1. Check label. \n2. Wash with like colors. \nMaterial: Cotton/Polyester Blend."
+    },
+    {
+        "id": "amz_96370",
+        "name": "Crystal Classic Rib Trunks - Pack of 4 (CA203-XXL)",
+        "price": 900.0,
+        "description": "High quality men's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/713n6T67meL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Crystal Classic Rib Trunks - Pack of 4 (CA203-XXL): \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_51792",
+        "name": "Liberty Womens Rl-82 Loafer",
+        "price": 2051.0,
+        "description": "High quality men's shoes from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/812OSchC26L._AC_UL320_.jpg",
+        "manual_text": "User Guide for Liberty Womens Rl-82 Loafer: \nStandard Warranty applies. \nFeatures: 3.5 Star Rating."
+    },
+    {
+        "id": "amz_68025",
+        "name": "Bogota",
+        "price": 2381.0,
+        "description": "High quality men's shoes from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/81+g9Vyww-L._AC_UL320_.jpg",
+        "manual_text": "User Guide for Bogota: \nStandard Warranty applies. \nFeatures: 4.1 Star Rating."
+    },
+    {
+        "id": "amz_64147",
+        "name": "RYOKU (Hitachi) 1 Ton Split AC Indoor Unit Copper Spare part",
+        "price": 999.0,
+        "description": "High quality appliances from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/31l0Hsn26cL._AC_UL320_.jpg",
+        "manual_text": "User Guide for RYOKU (Hitachi) 1 Ton Split AC Indoor Unit Copper Spare part: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_85784",
+        "name": "fashiongrape Men's Checkered Full Sleeves Cotton Shirt",
+        "price": 999.0,
+        "description": "High quality men's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61lGydlq1lL._AC_UL320_.jpg",
+        "manual_text": "User Guide for fashiongrape Men's Checkered Full Sleeves Cotton Shirt: \nStandard Warranty applies. \nFeatures: 2.9 Star Rating."
+    },
+    {
+        "id": "amz_44723",
+        "name": "INDIANBOSS Men's Tan Genuine Finished Leather Lace-Ups Forma...",
+        "price": 1499.0,
+        "description": "High quality men's shoes from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/713BcQMSieL._AC_UL320_.jpg",
+        "manual_text": "User Guide for INDIANBOSS Men's Tan Genuine Finished Leather Lace-Ups Formal Shoes 7: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_22801",
+        "name": "Vivinkaa Cotton Canvas Many Dog White Printed Tote",
+        "price": 349.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/713uu8C+OLL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Vivinkaa Cotton Canvas Many Dog White Printed Tote: \nStandard Warranty applies. \nFeatures: 4.5 Star Rating."
+    },
+    {
+        "id": "amz_73675",
+        "name": "LINDSEY STREET Genuine Leather Shoulder Tote Bag Large Work ...",
+        "price": 1949.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/71FqO71Nk1L._AC_UL320_.jpg",
+        "manual_text": "User Guide for LINDSEY STREET Genuine Leather Shoulder Tote Bag Large Work Purse Handbag (Black): \nStandard Warranty applies. \nFeatures: 5.0 Star Rating."
+    },
+    {
+        "id": "amz_11234",
+        "name": "ZEEMIUM IND Women's Cotton Printed Night Gown, Nighty; [KKR_...",
+        "price": 269.0,
+        "description": "High quality women's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/61GTqfL3t9S._AC_UL320_.jpg",
+        "manual_text": "User Guide for ZEEMIUM IND Women's Cotton Printed Night Gown, Nighty; [KKR_12]: \nStandard Warranty applies. \nFeatures: 5.0 Star Rating."
+    },
+    {
+        "id": "amz_23573",
+        "name": "Lapras { with 12 Years Replacement Warranty ) Pro Voyager Bl...",
+        "price": 1495.0,
+        "description": "High quality tv, audio & cameras from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/516It6NwW1L._AC_UL320_.jpg",
+        "manual_text": "User Guide for Lapras { with 12 Years Replacement Warranty ) Pro Voyager Bluetooth in Ear Headset with Heavy Deep Bass Bluetooth 5.0 USB ...: \nStandard Warranty applies. \nFeatures: 2.9 Star Rating."
+    },
+    {
+        "id": "amz_53641",
+        "name": "CARBON BASICS Men's Regular Fit Cotton Striped Henley T-Shir...",
+        "price": 649.0,
+        "description": "High quality men's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41PscPtEuTL._AC_UL320_.jpg",
+        "manual_text": "User Guide for CARBON BASICS Men's Regular Fit Cotton Striped Henley T-Shirt Full Sleeves: \nStandard Warranty applies. \nFeatures: 4.2 Star Rating."
+    },
+    {
+        "id": "amz_10647",
+        "name": "Spykar Mid Tone Wash Cotton Tapered Fit Mens Jeans (S21K-01B...",
+        "price": 1569.0,
+        "description": "High quality men's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/51GNLbxIctL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Spykar Mid Tone Wash Cotton Tapered Fit Mens Jeans (S21K-01BA-053BU-P): \nStandard Warranty applies. \nFeatures: 5.0 Star Rating."
+    },
+    {
+        "id": "amz_42210",
+        "name": "Galisto Polycarbonate Luggage Hard Case Suitcase Four Double...",
+        "price": 2899.0,
+        "description": "High quality bags & luggage from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/31znRvWAs7L._AC_UL320_.jpg",
+        "manual_text": "User Guide for Galisto Polycarbonate Luggage Hard Case Suitcase Four Double Wheels (20Inch): \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_46158",
+        "name": "AONES Pack of 3 Magnetic Loop Watch Strap Compatible for Noi...",
+        "price": 999.0,
+        "description": "High quality kids' fashion from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/713ZfMnbmpL._AC_UL320_.jpg",
+        "manual_text": "User Guide for AONES Pack of 3 Magnetic Loop Watch Strap Compatible for Noise Noisefit Core Watch Strap Black, Gold, Rose Gold: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_72510",
+        "name": "PC Jeweller The Connolly 22k (916) yellow-gold Ring for Wome...",
+        "price": 20066.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/61O0lYmWXJL._AC_UL320_.jpg",
+        "manual_text": "User Guide for PC Jeweller The Connolly 22k (916) yellow-gold Ring for Women: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_60496",
+        "name": "ELECTROPRIME 2X(Bluetooth Headphones Cable,New TRN BT3 Wirel...",
+        "price": 14994.0,
+        "description": "High quality tv, audio & cameras from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/41ctbMw0XVL._AC_UL320_.jpg",
+        "manual_text": "User Guide for ELECTROPRIME 2X(Bluetooth Headphones Cable,New TRN BT3 Wireless Sport Bluetooth Earphone H7H8: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_80111",
+        "name": "FIMS - Fashion is my style.Womens Cotton Bra Panty Set, Ling...",
+        "price": 387.0,
+        "description": "High quality women's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81xqJJIAQgL._AC_UL320_.jpg",
+        "manual_text": "User Guide for FIMS - Fashion is my style.Womens Cotton Bra Panty Set, Lingerie Set for Women Bra Panty Set for Women Lingerie Multi-Colo...: \nStandard Warranty applies. \nFeatures: 3.4 Star Rating."
+    },
+    {
+        "id": "amz_21308",
+        "name": "AONES Pack of 2 Silicone & Metal Chain Belt Watch Strap Comp...",
+        "price": 599.0,
+        "description": "High quality kids' fashion from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61VNDEI5GvL._AC_UL320_.jpg",
+        "manual_text": "User Guide for AONES Pack of 2 Silicone & Metal Chain Belt Watch Strap Compatible for Helix Smart 2.0 Watch Band Black: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_32360",
+        "name": "IQRA FASHION Women's Fit and flare Maxi Dress",
+        "price": 429.0,
+        "description": "High quality women's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/61kkoRxvMUL._AC_UL320_.jpg",
+        "manual_text": "User Guide for IQRA FASHION Women's Fit and flare Maxi Dress: \nStandard Warranty applies. \nFeatures: 3.8 Star Rating."
+    },
+    {
+        "id": "amz_48917",
+        "name": "Shazam Printed T-Shirt for Unisex",
+        "price": 310.0,
+        "description": "High quality men's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41fiHKMB7HL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Shazam Printed T-Shirt for Unisex: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_57150",
+        "name": "Designer Diamond Studded Exclusive Style Leather Belt Ladies...",
+        "price": 999.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/51+sh6x-zML._AC_UL320_.jpg",
+        "manual_text": "User Guide for Designer Diamond Studded Exclusive Style Leather Belt Ladies Unique Watch Girls Stylish Watch Analog Watch: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_85918",
+        "name": "Better Alt Greens Powder, Helps Reduce Bloating, 15 Super Gr...",
+        "price": 299.0,
+        "description": "High quality beauty & health from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/51E9VQcAlAL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Better Alt Greens Powder, Helps Reduce Bloating, 15 Super Greens- Blend of Spirulina, Moringa & More, Vegan Super Greens P...: \nStandard Warranty applies. \nFeatures: 5.0 Star Rating."
+    },
+    {
+        "id": "amz_20820",
+        "name": "VINTAGE9 Premium Canvas Leather Backpack - Amsterdam",
+        "price": 2499.0,
+        "description": "High quality kids' fashion from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/61QnWZZbFfL._AC_UL320_.jpg",
+        "manual_text": "User Guide for VINTAGE9 Premium Canvas Leather Backpack - Amsterdam: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_35669",
+        "name": "Haute Sauce Textured Oversized Shopper Tote Bag with Button ...",
+        "price": 999.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71AmI8kvrgL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Haute Sauce Textured Oversized Shopper Tote Bag with Button Lock (AZ_HSHB1028): \nStandard Warranty applies. \nFeatures: 1.0 Star Rating."
+    },
+    {
+        "id": "amz_10744",
+        "name": "Stardrops The Pink Stuff Miracle Oxi Stain Remover Spray 500...",
+        "price": 309.0,
+        "description": "High quality beauty & health from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/41zK6qEETNL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Stardrops The Pink Stuff Miracle Oxi Stain Remover Spray 500 Ml: \nStandard Warranty applies. \nFeatures: 4.1 Star Rating."
+    },
+    {
+        "id": "amz_52313",
+        "name": "Moneekar Jewels Stainless Steel Bracelet For Men",
+        "price": 799.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/415BHFtcCRL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Moneekar Jewels Stainless Steel Bracelet For Men: \nStandard Warranty applies. \nFeatures: 3.9 Star Rating."
+    },
+    {
+        "id": "amz_61720",
+        "name": "PC Jeweller The Ananda 22 KT Yellow Gold Earrings",
+        "price": 27609.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51zml8xXM+L._AC_UL320_.jpg",
+        "manual_text": "User Guide for PC Jeweller The Ananda 22 KT Yellow Gold Earrings: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_45679",
+        "name": "Spazer Running Casual Shoes for Men 4 White",
+        "price": 549.0,
+        "description": "High quality men's shoes from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/71iU8-c0EQL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Spazer Running Casual Shoes for Men 4 White: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_41567",
+        "name": "Peter England Men's Slim Fit Casual Shirt",
+        "price": 959.0,
+        "description": "High quality men's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71piyMoPT5L._AC_UL320_.jpg",
+        "manual_text": "User Guide for Peter England Men's Slim Fit Casual Shirt: \nStandard Warranty applies. \nFeatures: 3.0 Star Rating."
+    },
+    {
+        "id": "amz_60385",
+        "name": "Strand By Obaku Mason Lille Charcoal Analog Black Dial Women...",
+        "price": 4045.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61l8fI5d4GL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Strand By Obaku Mason Lille Charcoal Analog Black Dial Women's Watch-S717LXBBMB: \nStandard Warranty applies. \nFeatures: 4.0 Star Rating."
+    },
+    {
+        "id": "amz_28378",
+        "name": "Puma Men Sweatshirt",
+        "price": 3035.19,
+        "description": "High quality sports & fitness from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/81aGT5o5kLL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Puma Men Sweatshirt: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_42348",
+        "name": "NEUTRON Luxury Analog Black Color Dial Women Watch - G539-GM...",
+        "price": 366.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/71BWwNV6t7L._AC_UL320_.jpg",
+        "manual_text": "User Guide for NEUTRON Luxury Analog Black Color Dial Women Watch - G539-GM312 (Pack of 2): \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_79431",
+        "name": "Puma Men's St Activate Heather Closed Shoe",
+        "price": 1989.0,
+        "description": "High quality stores from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/81wnMPIdmCL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Puma Men's St Activate Heather Closed Shoe: \nStandard Warranty applies. \nFeatures: 3.9 Star Rating."
+    },
+    {
+        "id": "amz_21138",
+        "name": "I Jewels 18k Gold Plated Traditional Floral Kundan Pearl Stu...",
+        "price": 549.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/71ltwpXZBbL._AC_UL320_.jpg",
+        "manual_text": "User Guide for I Jewels 18k Gold Plated Traditional Floral Kundan Pearl Studded Rajasthani Sheeshphool/SheeshPatti for Women (T2066): \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_48872",
+        "name": "ZAVERI PEARLS Gold Tone Kundan & Pearls Wedding Collection C...",
+        "price": 674.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/718-LAGNKTL._AC_UL320_.jpg",
+        "manual_text": "User Guide for ZAVERI PEARLS Gold Tone Kundan & Pearls Wedding Collection Choker Necklace & Earring Set For Women-ZPFK10126: \nStandard Warranty applies. \nFeatures: 3.9 Star Rating."
+    },
+    {
+        "id": "amz_51351",
+        "name": "Bersache Sports Shoes for Kids | Latest Stylish Sports Shoes...",
+        "price": 763.0,
+        "description": "High quality men's shoes from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/71ra3rohnML._AC_UL320_.jpg",
+        "manual_text": "User Guide for Bersache Sports Shoes for Kids | Latest Stylish Sports Shoes for Boys | Lace-Up Lightweight Multicolour Shoes for Running,...: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_42080",
+        "name": "blackberrys NL-Taren # Black",
+        "price": 809.0,
+        "description": "High quality men's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81DcH-pVjPS._AC_UL320_.jpg",
+        "manual_text": "User Guide for blackberrys NL-Taren # Black: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_48568",
+        "name": "Anuj Sales Unheated Untreatet 12.00 Carat AAA+ Quality Natur...",
+        "price": 799.0,
+        "description": "High quality accessories from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/512nl7VPtGL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Anuj Sales Unheated Untreatet 12.00 Carat AAA+ Quality Natural Blue Sapphire Neelam Silver Plated Adjustable Gemstone Ring...: \nStandard Warranty applies. \nFeatures: 1.0 Star Rating."
+    },
+    {
+        "id": "amz_84367",
+        "name": "Chromozome Men IT11 College Trunk, Size M - 80cm - 85cm - As...",
+        "price": 350.0,
+        "description": "High quality men's clothing from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/71-TrbfearL._AC_UL320_.jpg",
+        "manual_text": "User Guide for Chromozome Men IT11 College Trunk, Size M - 80cm - 85cm - Assorted Colour - Pack of 8: \nStandard Warranty applies. \nFeatures: nan Star Rating."
+    },
+    {
+        "id": "amz_74214",
+        "name": "So Good Almond Milk 4L (4X 1000 ml)| Unsweetened | Lactose F...",
+        "price": 1056.0,
+        "description": "High quality grocery & gourmet foods from Amazon.",
+        "image_url": "https://m.media-amazon.com/images/I/71DOJxZhlGL._AC_UL320_.jpg",
+        "manual_text": "User Guide for So Good Almond Milk 4L (4X 1000 ml)| Unsweetened | Lactose Free Milk | Gluten Free | Sugar Free | Vegan Milk | Non-Dairy |...: \nStandard Warranty applies. \nFeatures: 4.0 Star Rating."
+    }
+]

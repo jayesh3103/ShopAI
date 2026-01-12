@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+streamlit
+google-generativeai
+chromadb
+langchain
+langchain-google-genai
+pypdf
+python-multipart
+requests
+pydantic
+pydantic-settings
+python-dotenv
+streamlit-mic-recorder
+gTTS
+SpeechRecognition

@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Bag Body: Slightly tapered and wider -->
+<path d="M50 75H150L145 170H55L50 75Z" stroke="white" stroke-width="10" stroke-linejoin="round"/>
+<!-- Bag Handle: Looped, narrower than body -->
+<path d="M80 75V60C80 48.9543 88.9543 40 100 40C111.046 40 120 48.9543 120 60V75" stroke="white" stroke-width="10" stroke-linecap="round"/>
+<!-- Ascending Arrow -->
+<path d="M100 135V95M100 95L85 110M100 95L115 110" stroke="#A855F7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
