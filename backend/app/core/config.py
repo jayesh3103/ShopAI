@@ -12,8 +12,8 @@ class Settings(BaseSettings):
     COLLECTION_NAME: str = "product_manuals"
     
     # AI Models
-    GEMINI_MODEL_SMART: str = "gemini-1.5-pro"
-    GEMINI_MODEL_FAST: str = "gemini-1.5-flash"
+    GEMINI_MODEL_SMART: str = "gemini-2.5-flash"
+    GEMINI_MODEL_FAST: str = "gemini-2.5-flash"
 
     class Config:
         env_file = ".env"
