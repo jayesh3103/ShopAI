@@ -8,7 +8,7 @@ genai.configure(api_key=settings.GOOGLE_API_KEY)
 
 class CompareService:
     def __init__(self):
-        self.model = genai.GenerativeModel(settings.GEMINI_MODEL_SMART)
+        self.model = genai.GenerativeModel('gemini-flash-latest')
 
     def compare_products(self, products: List[dict]) -> str:
         """
@@ -29,22 +29,17 @@ class CompareService:
             """
 
         prompt = f"""
-        You are a **Consumer Research Expert** (like Wirecutter or RTINGS).
-        Create a decisive comparison table for these products to help a buyer choose.
+        You are a smart shopping assistant. Create a detailed Comparison Table for these products.
 
-        ## PRODUCTS
+        Products Info:
         {products_text}
 
-        ## INSTRUCTIONS
-        1. **Verdict-First Approach:** The first row must be the "Verdict" (e.g., "Winner", "Runner-up", "Best Value").
-        2. **Markdown Table:** Use strict Markdown.
-        3. **Currency:** All prices in INR (₹).
-        4. **Columns:** Verdict, Product, Price, Key Specs, Real-World Performance, Best For (Persona).
-        
-        ## STYLE GUIDE
-        - Be objective but opinionated.
-        - Highlight the winner's name in **Bold Green**.
-        - Highlight the runner-up's name in **Bold Orange**.
+        Instructions:
+        1. Output a Markdown Table.
+        2. Columns: Product Name, Price (in ₹), Key Features, Pros, Cons, Best For.
+        3. Highlight the "Best Value" choice in **bold green** within the table if possible, or mention it in a summary below.
+        4. Be concise.
+        5. IMPORTANT: Display all prices in Indian Rupees (₹).
         """
 
         try:

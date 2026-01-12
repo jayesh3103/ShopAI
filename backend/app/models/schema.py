@@ -16,7 +16,6 @@ class SearchRequest(BaseModel):
 
 class ChatRequest(BaseModel):
     message: str
-    history: List[dict] = []
 class ChatResponse(BaseModel):
     response: str
     sources: List[dict] = []

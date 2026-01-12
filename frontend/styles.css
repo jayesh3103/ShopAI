@@ -57,8 +57,6 @@ html, body, [class*="css"] {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 100px;
     backdrop-filter: blur(20px);
-    width: fit-content; /* Prevent full width */
-    margin-bottom: 20px;
 }
 
 .stTabs [data-baseweb="tab"] {
@@ -69,10 +67,6 @@ html, body, [class*="css"] {
     background: transparent;
     border: none;
     transition: all 0.3s ease;
-    padding: 0 24px; /* More horizontal padding */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .stTabs [aria-selected="true"] {
@@ -80,15 +74,6 @@ html, body, [class*="css"] {
     color: #fff !important;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
     font-weight: 600;
-}
-
-/* Hide default streamlit tab decoration */
-.stTabs [data-baseweb="tab-border"] {
-    display: none !important;
-}
-
-.stTabs [data-baseweb="tab-highlight"] {
-    display: none !important;
 }
 
 /* --- SEARCH & INPUTS (Invisible Tech) --- */

@@ -15,7 +15,7 @@ genai.configure(api_key=settings.GOOGLE_API_KEY)
 
 class SustainabilityService:
     def __init__(self):
-        self.model = genai.GenerativeModel(settings.GEMINI_MODEL_SMART)
+        self.model = genai.GenerativeModel('gemini-flash-latest')
 
     def _load_image(self, image_url: str):
         """Loads image from local path or URL."""
@@ -52,34 +52,37 @@ class SustainabilityService:
                     logger.info("Image added to Eco-Audit.")
 
             prompt = f"""
-            You are a **Lead Environmental Auditor** for a global certification body (like LEED or B Corp).
-            Conduct a forensic **MULTIMODAL SUSTAINABILITY AUDIT** on:
+            You are an expert Environmental Scientist & Sustainability Auditor.
+            Conduct a rigorous MULTIMODAL AUDIT of this product.
             
-            - **Product:** {product_name}
-            - **Category:** {category}
-            - **Claims:** {description}
+            Product: {product_name}
+            Category: {category}
+            Description: {description}
 
-            ## AUDIT PROTOCOL
-            1. **Visual Packaging Inspection:** Scrutinize the image (if present) for non-recyclable materials (blister packs, styrofoam) vs eco-claims.
-            2. **Material Reality Check:** Does "Vegan Leather" visually match PVC/Plastic or actual organic material?
-            3. **Lifecycle Simulation:** Estimate the carbon cost from extraction to landfill.
+            **Visual Audit Instructions:**
+            1. Analyze the image for **Material Reality** (e.g., does "Eco-Wood" look like plastic?).
+            2. Check for **Excessive Packaging** (blister packs, shrink wrap).
+            
+            **Deep Metrics Estimation (Use Industry Averages):**
+            - **Carbon Footprint:** Estimate kg CO2e for this product type.
+            - **Water Usage:** Estimate Liters used in production.
 
-            ## OUTPUT FORMAT (Strict JSON)
+            **Output Strict JSON:**
             {{
-                "score": [0-100] (Be strict. 100 is impossible, 80 is rare),
-                "label": "High Impact" | "Moderate" | "Eco-Friendly" | "Gold Standard",
-                "color": "red" | "yellow" | "green" | "#0ea5e9" (Cyan for Gold),
-                "reason": "Professional audit summary. Call out hypocrisies explicitly.",
-                "visual_audit": "Detailed observations from the image (e.g., 'Excessive void-fill detected').",
-                "greenwashing_flag": boolean (TRUE if marketing 'Eco' claims don't match material reality),
+                "score": [0-100],
+                "label": "High Impact", "Moderate", "Eco-Friendly", or "Sustainable Choice",
+                "color": "red", "yellow", or "green",
+                "reason": "1 concise sentence summary.",
+                "visual_audit": "What you detected from the image (e.g., 'Detected single-use plastic packaging').",
+                "greenwashing_flag": boolean (True if marketing contradicts visual reality),
                 "metrics": {{
-                    "carbon_footprint": "Estimated kg CO2e (Scientific Estimate)",
-                    "water_usage": "Estimated Liters (Scientific Estimate)",
-                    "recyclability": "High/Medium/Low (with material justification)"
+                    "carbon_footprint": "e.g. 5.2 kg CO2e",
+                    "water_usage": "e.g. 2000 L",
+                    "recyclability": "e.g. Low - Mixed Materials"
                 }},
-                "pros": ["Eco-Factor 1", "Eco-Factor 2"],
-                "cons": ["Major Concern 1", "Major Concern 2"],
-                "tips": "One expert recommendation for sustainable usage or disposal."
+                "pros": ["List 2 positive eco-factors"],
+                "cons": ["List 2 negative eco-factors"],
+                "tips": "1 actionable tip for disposal or better choice."
             }}
             """
             inputs.append(prompt)

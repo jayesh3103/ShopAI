@@ -4,7 +4,6 @@ from typing import List
 from backend.app.services.vector_db import get_collection
 from backend.app.services.embeddings import get_embeddings_service
 from backend.app.models.schema import Product
-from backend.app.core.config import settings
 
 logger = logging.getLogger(__name__)
 
@@ -60,7 +59,7 @@ class SearchService:
         """
         try:
             # Generate description using Gemini
-            model = genai.GenerativeModel(settings.GEMINI_MODEL_SMART)
+            model = genai.GenerativeModel('gemini-flash-latest')
             
             # Simple prompt
             prompt = "Describe this product in detail so I can find similar items. Focus on category, color, material, and key features. Return a single paragraph description."

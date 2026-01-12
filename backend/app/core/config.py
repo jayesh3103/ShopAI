@@ -10,10 +10,6 @@ class Settings(BaseSettings):
     SERPAPI_KEY: str = os.getenv("SERPAPI_KEY", "")
     CHROMA_DB_DIR: str = os.path.join(os.getcwd(), "data", "chroma_db")
     COLLECTION_NAME: str = "product_manuals"
-    
-    # AI Models
-    GEMINI_MODEL_SMART: str = "gemini-2.5-flash"
-    GEMINI_MODEL_FAST: str = "gemini-2.5-flash"
 
     class Config:
         env_file = ".env"

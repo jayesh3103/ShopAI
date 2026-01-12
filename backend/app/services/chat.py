@@ -15,10 +15,10 @@ class ChatService:
     def __init__(self):
         self.collection = get_collection()
         self.embedding_service = get_embeddings_service()
-        self.model = genai.GenerativeModel(settings.GEMINI_MODEL_SMART)
+        self.model = genai.GenerativeModel('gemini-flash-latest')
         self.asset_index = AssetIndex()
 
-    def _retrieve_context(self, query: str, limit: int = 5) -> Tuple[str, List[dict]]:
+    def _retrieve_context(self, query: str, limit: int = 3) -> Tuple[str, List[dict]]:
         """Retrieve relevant manual chunks."""
         try:
             query_embedding = self.embedding_service.embed_query(query)
@@ -35,7 +35,7 @@ class ChatService:
                 for i in range(len(results["ids"][0])):
                     doc_text = results["documents"][0][i]
                     metadata = results["metadatas"][0][i]
-                    context_text += f"[Product: {metadata['product_name']}] {doc_text}\n\n"
+                    context_text += f"Product: {metadata['product_name']}\nInfo: {doc_text}\n\n"
                     sources.append(metadata)
             
             return context_text, sources
@@ -52,29 +52,20 @@ class ChatService:
         context, sources = self._retrieve_context(message)
         available_assets = list(self.asset_index._ASSETS.keys())
         
-        system_prompt = f"""You are a **Senior Product Support Engineer** for ShopAI, a premium e-commerce platform.
+        system_prompt = f"""You are a helpful Indian shopping support assistant designed for e-commerce.
         
-        ## Your Knowledge Base (Strict Context):
+        Context provided from product manuals:
         {context}
         
-        ## Available Visual Guides:
-        {available_assets}
+        Available Visual Aids (Video Guides): {available_assets}
         
-        ## Instructions:
-        1. **Grounding:** Answer the user's question using **ONLY** the information provided in the "Knowledge Base" above. Do not invent features or procedures.
-        2. **Verification:** If the answer is not in the context, politely state: "I consulted the product manuals, but I couldn't find specific information on that. Could you verify the product model?"
-        3. **Tone:** Professional, empathetic, and technical but accessible.
-        4. **Language:** 
-           - If the user writes in Hindi/Hinglish, reply in **Hinglish**.
-           - Otherwise, reply in Standard English.
-        5. **Visual Aid Protocol:** 
-           - If a "Visual Guide" listed above directly helps solve the user's issue (e.g., "how to clean filter"), append the tag `<VIDEO:key>` at the *very end* of your response.
-           - Example: "You can remove the dust bin by sliding the latch... <VIDEO:cleaning_guide>"
-        
-        ## Reasoning Process:
-        - First, analyze the User's question.
-        - Second, scan the Knowledge Base for matches.
-        - Third, formulate the answer.
+        Guidelines:
+        1. Answer based ONLY on the context provided. If not found, admit it.
+        2. **Language:** If the user speaks Hindi or Hinglish, reply in **Hinglish** (Hindi written in English script). If they speak English, reply in English.
+        3. Keep technical product terms in English.
+        4. **Visual Aid:** If the user's question is best answered by one of the "Available Visual Aids", append the tag `<VIDEO:key>` to the end of your response.
+           Example: "Here is how you replace the filter... <VIDEO:replace_filter>"
+        5. Be polite and helpful.
         """
         
         # Start a chat session

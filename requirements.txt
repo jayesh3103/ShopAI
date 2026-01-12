@@ -9,7 +9,6 @@ pypdf
 python-multipart
 requests
 pydantic
-pydantic-settings
 python-dotenv
 streamlit-mic-recorder
 gTTS

@@ -14,7 +14,7 @@ genai.configure(api_key=settings.GOOGLE_API_KEY)
 
 class VideoService:
     def __init__(self):
-        self.model = genai.GenerativeModel(settings.GEMINI_MODEL_SMART)
+        self.model = genai.GenerativeModel('gemini-flash-latest')
         self.upload_dir = Path("temp_videos")
         self.upload_dir.mkdir(exist_ok=True)
 
@@ -39,7 +39,7 @@ class VideoService:
             # 3. Wait for processing
             while video_file.state.name == "PROCESSING":
                 logger.info("Waiting for video processing...")
-                time.sleep(1) # Faster polling
+                time.sleep(2)
                 video_file = genai.get_file(video_file.name)
 
             if video_file.state.name == "FAILED":
@@ -47,50 +47,49 @@ class VideoService:
 
             logger.info("Video is active. Generating content...")
 
-            # 4. Generate Advanced "Deep Seek" Diagnosis
+            # 4. Generate Advanced Diagnosis
             prompt = f"""
-            You are **Deep Seek**, an elite AI Diagnostic Engine for electromechanical devices.
+            You are "Deep Seek", an advanced AI Technical Diagnostic Agent.
+            Analyze this video footage of a malfunctioning product frame-by-frame.
             
-            ## MISSION
-            Perform a forensic analysis of the provided video footage to identify faults and prescribe a repair.
-            
-            ## USER CONTEXT
-            "{context}"
-            
-            ## ANALYSIS PROTOCOL (Chain of Thought):
-            1. **Visual Scan:** Scan frame-by-frame for physical damage, loose components, or irregular movement.
-            2. **Audio Scan:** Analyze audio patterns for grinding, buzzing, or beeping (phantom simulation).
-            3. **Hypothesis Generation:** Formulate 3 possible root causes.
-            4. **Selection:** Choose the most probable cause based on evidence.
-            
-            ## OUTPUT REPORT (Markdown):
-            
-            ### 🚨 Executive Summary
-            - **Fault Status:** [CRITICAL / WARNING / INFO]
-            - **Confidence Score:** [0-100]%
-            - **Primary Issue:** [Concise diagnosis]
-            
-            ### 🕵️ Forensic Observations
-            - **[00:0X] Visual:** [Detailed observation]
-            - **[00:0X] Audio:** [Detailed observation]
-            
-            ### 🧠 Root Cause Analysis
-            > **Diagnosis:** [Detailed explanation of what failed and why]
-            
-            ### 🛠️ Repair Procedure
-            **Difficulty:** [1-5 Wrenches]
-            **Estimated Time:** [Minutes]
-            
-            **Steps:**
+            User Context: "{context}"
+
+            ## MISSION:
+            Provide a professional, actionable repair plan.
+
+            ## OUTPUT FORMAT (Markdown):
+
+            ### 🚨 Severity Assessment
+            **Severity Score:** [1-10] / 10
+            **Status:** [CRITICAL / MODERATE / MINOR]
+            **Safety Warning:** [If applicable, e.g., "Disconnect power immediately"]
+
+            ### 🕵️ Visual & Audio Analysis
+            - **00:00 - 00:xx**: [Describe exactly what is seen/heard]
+            - **Detected Component:** [Name of the part]
+            - **Observed Fault:** [Specific symptom, e.g., "Capacitor whine", "Error Code E4"]
+
+            ### 🛠️ Repair Action Plan
+            **Tools Required:**
+            - [Tool 1]
+            - [Tool 2]
+
+            **Step-by-Step Fix:**
             1. [Step 1]
             2. [Step 2]
-            3. [Step 3]
             
-            **Parts Likely Needed:**
-            - [Part Name] (Search SKU: [Generate a generic search term])
-            
+            **Estimated Fix Time:** [e.g., 15 mins]
+            **Parts Needed:** [If replacement is likely]
+
+            **Estimated Fix Time:** [e.g., 15 mins]
+            **Parts Needed:** [If replacement is likely]
+
             ---
-            *AI Diagnostic Confidence: High. Always disconnect power before servicing.*
+            *Disclaimer: AI diagnosis. Consulting a professional is recommended for high-voltage devices.*
+
+            **Language Guideline:**
+            - If the user's context is in Hindi/Hinglish, output the report in **Hinglish**.
+            - Else, default to English.
             """
 
             response = self.model.generate_content([video_file, prompt])

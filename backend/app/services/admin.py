@@ -10,7 +10,7 @@ genai.configure(api_key=settings.GOOGLE_API_KEY)
 
 class AdminService:
     def __init__(self):
-        self.model = genai.GenerativeModel(settings.GEMINI_MODEL_SMART)
+        self.model = genai.GenerativeModel('gemini-flash-latest')
 
     def analyze_product_image(self, image_b64: str):
         """
@@ -18,23 +18,17 @@ class AdminService:
         """
         try:
             prompt = """
-            You are a **Senior Catalog Specialist** for a luxury e-commerce platform.
-            
-            ## MISSION
-            Transform this raw product image into a high-converting catalog entry.
-
-            ## OUTPUT FORMAT (Strict JSON)
-            {
-                "name": "Professional, catchy product title (Max 10 words).",
-                "category": "Precise taxonomy (e.g., 'Men's Footwear', 'Smart Home').",
-                "description": "2-3 sentences of persuasive copy focusing on benefits and lifestyle appeal. Use premium vocabulary.",
-                "features": ["Feature 1", "Feature 2", "Feature 3"],
-                "estimated_price_inr": 0000 (Number only, realistic market estimate in Rupees),
-                "seo_tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
-                "seo_meta": "Concise meta description for search engines (Max 160 chars).",
-                "material": "Detailed material composition (e.g., 'Aerospace-grade Aluminum', 'Organic Cotton').",
-                "sustainability_rating": [1-10] (1=Toxic, 10=Regenerative)
-            }
+            Analyze this product image for an e-commerce catalog.
+            Return a JSON object with the following fields:
+            - name: A catchy, professional product title.
+            - category: The main category (e.g., Footwear, Electronics).
+            - description: A compelling marketing description (2-3 sentences).
+            - features: A list of 3 key features.
+            - estimated_price_inr: A realistic estimated price in Indian Rupees (number only).
+            - seo_tags: A list of 5-7 SEO keywords/tags.
+            - seo_meta: A concise meta description for search engines (max 160 chars).
+            - material: Best guess at material composition (e.g., "100% Cotton", "Plastic & Metal").
+            - sustainability_rating: Estimate eco-friendliness 1-10 (1=Bad, 10=Green).
             
             Ensure the output is valid JSON.
             """

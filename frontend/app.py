@@ -11,18 +11,7 @@ st.set_page_config(
 )
 
 # --- Constants & State ---
-# --- Constants & State ---
-import os
-try:
-    # Try getting from Streamlit Secrets (for production)
-    API_URL = st.secrets["general"]["BACKEND_URL"] + "/api"
-except:
-    # Fallback to local (or environment variable)
-    API_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000") + "/api"
-
-# Ensure no double trailing slashes if user added one
-if API_URL.endswith("//api"):
-    API_URL = API_URL.replace("//api", "/api")
+API_URL = "http://127.0.0.1:8000/api"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []

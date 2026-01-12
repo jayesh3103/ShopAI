@@ -11,7 +11,7 @@ genai.configure(api_key=settings.GOOGLE_API_KEY)
 
 class PriceService:
     def __init__(self):
-        self.model = genai.GenerativeModel(settings.GEMINI_MODEL_SMART)
+        self.model = genai.GenerativeModel('gemini-flash-latest')
 
     def predict_price_trend(self, product_name: str, current_price: float, category: str = "") -> dict:
         """
@@ -21,28 +21,25 @@ class PriceService:
             today_date = datetime.now().strftime("%Y-%m-%d")
             
             prompt = f"""
-            You are a **Senior Market Analyst** at a top-tier investment firm, specializing in retail commodities.
-            
-            ## OBJECTIVE
-            Forecast the short-term price trajectory for the following asset.
+            You are an expert Market Analyst AI.
+            Predict the short-term price trend for this product.
 
-            ## ASSET DATA
-            - **Product:** {product_name}
-            - **Category:** {category}
-            - **Current Price:** {current_price}
-            - **Analysis Date:** {today_date}
+            Product: {product_name}
+            Category: {category}
+            Current Price: {current_price}
+            Date: {today_date}
 
-            ## ANALYTICAL FRAMEWORK
-            1. **Seasonality Protocol:** deeply analyze if this item is currently in-season or off-season (e.g., ACs in Winter, Wool in Summer).
-            2. **Lifecycle Check:** Is a newer model likely launching soon? (Depreciating current stock).
-            3. **Event Horizon:** Check for upcoming major sales events (Diwali, Black Friday, Great Indian Festival) relative to today's date.
+            Analyze factors:
+            1. Seasonality (e.g., Electronics, Clothes).
+            2. Product Lifecycle (Is a new version coming?).
+            3. Upcoming Sales Events (Black Friday, Prime Day, Regional Festivals).
 
-            ## OUTPUT FORMAT (Strict JSON)
+            Output strict JSON:
             {{
-                "recommendation": "BUY_NOW" | "WAIT",
+                "recommendation": "BUY_NOW" or "WAIT",
                 "confidence": [0-100],
-                "reason": "Expert analysis in 2 sentences. Focus on the *why*. Use professional financial tone mixed with consumer advice. If context implies India, use Hinglish nuances.",
-                "predicted_drop": "Specific prediction, e.g., 'Expect 15% correction by [Month]' or 'Prices stabilizing'."
+                "reason": "Short explanation (max 2 sentences). If product is Indian or context implies India, use Hinglish/Indian context.",
+                "predicted_drop": "e.g., 'Likely 10% drop in 2 weeks' or 'Stable'"
             }}
             """
 
